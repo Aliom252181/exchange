@@ -21,6 +21,7 @@ export default {
       default: "400px"
     }
   },
+
   mounted() {
     this.$emit("echangeReturn", 0);
     if (!this.echartData || this.echartData == 0 || this.echartData == "") {

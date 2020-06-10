@@ -35,5 +35,7 @@ export default {
 };
 </script>
 
-<style lang = "less" src = "../newsResource/NewsBar.less">
+<style>
+/* lang = "less" src = "../newsResource/NewsBar.less" */
+@import "../newsResource/NewsBar.css";
 </style>

@@ -14,5 +14,5 @@ export default {
 };
 </script>
 
-<style lang="less" src="../newsResource/Loading.less">
+<style src="../newsResource/Loading.css">
 </style>

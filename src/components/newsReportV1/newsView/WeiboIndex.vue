@@ -54,5 +54,5 @@ export default {
 };
 </script>
 
-<style  lang = "less" src = "../newsResource/NewsIndex.less">
+<style src = "../newsResource/NewsIndex.css">
 </style>

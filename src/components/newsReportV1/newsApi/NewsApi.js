@@ -1,4 +1,4 @@
-import axios from "@nuxtjs/axios";
+import axios from "axios";
 import { timeStampTurnTime } from "../newsUtil/TimeStampTurnTime";
 
 //金融新闻
