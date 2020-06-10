@@ -30,22 +30,26 @@
       <div class="middle-left">
         <div class="middle-left-item">
           <dv-border-box-12>
-            <exchange
-              class="echangeItems overflow_none"
-              :width="width"
-              :height="height"
-              @echangeReturn="getMyEchartStatus"
-            />
+            <div style="width:calc(100% - 20px);height:calc(100% - 20px)">
+              <exchange
+                class="echangeItems overflow_none"
+                :width="width"
+                :height="height"
+                @echangeReturn="getMyEchartStatus"
+              />
+            </div>
           </dv-border-box-12>
         </div>
         <div class="middle-left-item">
           <dv-border-box-12>
-            <China
-              class="echangeItems overflow_none"
-              :width="width"
-              :height="height"
-              @echangeReturn="getChinaEchartStatus"
-            />
+            <div style="width:calc(100% - 20px);height:calc(100% - 20px)">
+              <China
+                class="echangeItems overflow_none"
+                :width="width"
+                :height="height"
+                @echangeReturn="getChinaEchartStatus"
+              />
+            </div>
           </dv-border-box-12>
         </div>
       </div>
@@ -150,6 +154,13 @@ export default {
 </script>
 
 <style>
+* {
+  margin: 0;
+  padding: 0;
+}
+.border-box-content {
+  padding: 0 !important;
+}
 .middle-middle-top {
   height: 100%;
   width: 100%;
@@ -245,18 +256,18 @@ export default {
   width: 25%;
 }
 .news_box_div {
-  height: 100%;
-  padding: 50px 0px 10px 25px;
+  height: calc(100% - 70px);
+  padding: 50px 0px 10px 30px;
 }
 .newsItems {
   color: white;
   height: 100%;
-  width: 100%;
-  margin-right: 20px;
+  margin-right: 15px;
   overflow-y: auto;
 }
 .echangeItems {
   color: white;
+  margin: 10px 0 0 10px;
   height: 100%;
   width: 100%;
 }
