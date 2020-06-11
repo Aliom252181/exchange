@@ -57,7 +57,7 @@
         <div class="middle-middle-top">
           <World
             style="height:90%"
-            class="echangeItems overflow_none"
+            class="echangeItems1 overflow_none"
             :width="width"
             :height="height"
             @echangeReturn="getWorldEchartStatus"
@@ -268,6 +268,12 @@ export default {
 .echangeItems {
   color: white;
   margin: 10px 0 0 10px;
+  height: 100%;
+  width: 100%;
+}
+.echangeItems1 {
+  color: white;
+  margin: 10px 0 0 0;
   height: 100%;
   width: 100%;
 }
