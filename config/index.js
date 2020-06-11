@@ -7,6 +7,7 @@ const path = require("path");
 module.exports = {
   dev: {
     // Paths
+    // 如果没有服务端，localhost替换成10.10.10.112
     assetsSubDirectory: "static",
     assetsPublicPath: "/",
     proxyTable: {
