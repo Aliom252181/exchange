@@ -110,8 +110,8 @@ export default {
           yAxis: {
             type: "value",
             // min: "dataMin",
-            max: 7.152,
-            min: 7.080,
+            max: "dataMax",
+            min: "dataMin",
             //boundaryGap: [0.2, 0.2],
             splitNumber: 10,
             //minInterval: 0.001
