@@ -1,4 +1,4 @@
-<style scoped lang="less" src="./resources/css/style.less"></style>
+<style scoped src="./resources/css/style.css"></style>
 <template>
  <div class="news-container">
      <vue-seamless-scroll :data="list" class="seamless-warp" :class-option="classOption">

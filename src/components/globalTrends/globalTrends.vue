@@ -1,4 +1,4 @@
-<style scoped lang="less" src="./resources/css/style.less"></style>
+<style scoped src="./resources/css/style.css"></style>
 <template>
   <div class="globalTrends-container">
     <div class="globalTrends-container-top">
@@ -13,7 +13,6 @@
 import { globalTrends } from "../globalTrends/api/globalTrendsApi";
 import echarts from "echarts";
 export default {
-  name: "globalTrends",
   data() {
     return {
       title: "",
@@ -32,6 +31,7 @@ export default {
     getChart() {
       let param = {};
       globalTrends.globalTrendsList(param).then(res => {
+        console.log(res.data)
         var resData = res.data;
         this.UsDollarIndex = resData[0].c;
         resData.splice(22, 1);

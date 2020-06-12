@@ -172,5 +172,5 @@ export default {
   computed: {}
 };
 </script>
-<style scoped lang="less" src="./resources/css/style.less"></style>
+<style scoped src="./resources/css/style.css"></style>
 

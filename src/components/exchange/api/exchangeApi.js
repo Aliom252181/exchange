@@ -4,7 +4,7 @@ var exChange = {
   exChangeList(param) {
     return HttpRequest.getRequest({
       method: 'GET',
-      url: '/exChange',
+      url: '/api/exchange',
       data: param
     })
   },

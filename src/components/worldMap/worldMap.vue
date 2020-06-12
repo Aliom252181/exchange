@@ -1,5 +1,5 @@
 
-<style scoped lang="less" src="./resources/css/style.less"></style>
+<style scoped  src="./resources/css/style.css"></style>
 <template>
   <div class="worldMap-container">
     <div id="worldMap" style="width:100%;height:563px"></div>
@@ -9,7 +9,7 @@
 <script>
 import { exChange } from "../exchange/api/exchangeApi";
 import echarts from "echarts";
-import "../../../../node_modules/echarts/map/js/world";
+import "echarts/map/js/world";
 export default {
   name: "",
   data() {

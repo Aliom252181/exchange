@@ -1,10 +1,10 @@
-import { HttpRequest } from '@/components/AiswComponents/news/utils/request'
+import { HttpRequest } from '../utils/request'
 var news = {
   // 新闻列表
   newsList(param) {
     return HttpRequest.getRequest({
       method: 'GET',
-      url: '/newsList',
+      url: '/api/news',
       data: param
     })
   },

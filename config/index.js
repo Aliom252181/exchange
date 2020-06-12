@@ -19,33 +19,40 @@ module.exports = {
         }
       },
       "/api/Weibo": {
-        target: "http://localhost:8089/getWeiboHot",
+        target: "http://10.10.10.112:8089/getWeiboHot",
         changeOrigin: true,
         pathRewrite: {
           "^/api/Weibo": ""
         }
       },
       "/api/exchangeRate": {
-        target: "http://localhost:8089/getDailyFXJson",
+        target: "http://10.10.10.112:8089/getDailyFXJson",
         changeOrigin: true,
         pathRewrite: {
           "^/api/exchangeRate": ""
         }
       },
       "/api/exchange": {
-        target: "http://localhost:8089/getexchangeCNY",
+        target: "http://10.10.10.112:8089/getexchangeCNY",
         changeOrigin: true,
         pathRewrite: {
           "^/api/exchange": ""
         }
       },
       "/api/findWorld": {
-        target: "http://localhost:8089/getWorld",
+        target: "http://10.10.10.112:8089/getWorld",
         changeOrigin: true,
         pathRewrite: {
           "^/api/findWorld": ""
         }
-      }
+      },
+      '/globalTrends': {
+          target: 'https://api-q.fx678img.com/exchangeSymbol.php?exchName=WH',
+          changeOrigin: true,
+          pathRewrite: {
+            '^/globalTrends': ''
+          }
+      },
     },
 
     // Various Dev Server settings

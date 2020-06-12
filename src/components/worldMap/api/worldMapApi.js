@@ -1,4 +1,4 @@
-import { HttpRequest } from '@/components/AiswComponents/worldMap/utils/request'
+import { HttpRequest } from '../utils/request'
 var worldMap = {
   // 新闻列表
   worldMapList(param) {

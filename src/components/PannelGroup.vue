@@ -64,7 +64,7 @@
 </template>
 
 <script>
-import CountTo from 'vue-count-to'
+import CountTo from "vue-count-to";
 
 export default {
   components: {
@@ -72,96 +72,81 @@ export default {
   },
   methods: {
     handleSetLineChartData(type) {
-      this.$emit('handleSetLineChartData', type)
+      this.$emit("handleSetLineChartData", type);
     }
   }
-}
+};
 </script>
-
-<style lang="scss" scoped>
+<style  scoped>
 .panel-group {
   width: 100%;
   margin: 0;
-  .card-panel {
-    height: 108px;
-    cursor: pointer;
-    font-size: 12px;
-    position: relative;
-    overflow: hidden;
-    color: #666;
-
-    &:hover {
-      .card-panel-icon-wrapper {
-        color: #fff;
-      }
-
-      .icon-people {
-        background: #40c9c6;
-      }
-
-      .icon-message {
-        background: #36a3f7;
-      }
-
-      .icon-money {
-        background: #f4516c;
-      }
-
-      .icon-shopping {
-        background: #34bfa3;
-      }
-    }
-
-    .icon-people {
-      color: #40c9c6;
-    }
-
-    .icon-message {
-      color: #36a3f7;
-    }
-
-    .icon-money {
-      color: #f4516c;
-    }
-
-    .icon-shopping {
-      color: #34bfa3;
-    }
-
-    .card-panel-icon-wrapper {
-      float: left;
-      margin: 14px 0 0 14px;
-      padding: 16px;
-      transition: all 0.38s ease-out;
-      border-radius: 6px;
-    }
-
-    .card-panel-icon {
-      float: left;
-      font-size: 48px;
-    }
-
-    .card-panel-description {
-      float: right;
-      font-weight: bold;
-      margin: 26px;
-      margin-left: 0px;
-
-      .card-panel-text {
-        line-height: 18px;
-        color: #b9b9b9;
-        font-size: 16px;
-        margin-bottom: 12px;
-      }
-
-      .card-panel-num {
-        margin-top: 5px;
-        display: inline-block;
-        font-size: 30px;
-        color: #ffeb3b;
-      }
-    }
-  }
+  display: flex;
+  justify-content: space-around;
+}
+.panel-group .card-panel {
+  height: 108px;
+  cursor: pointer;
+  font-size: 12px;
+  position: relative;
+  overflow: hidden;
+  color: #666;
+}
+.panel-group .card-panel:hover .card-panel-icon-wrapper {
+  color: #fff;
+}
+.panel-group .card-panel:hover .icon-people {
+  background: #40c9c6;
+}
+.panel-group .card-panel:hover .icon-message {
+  background: #36a3f7;
+}
+.panel-group .card-panel:hover .icon-money {
+  background: #f4516c;
+}
+.panel-group .card-panel:hover .icon-shopping {
+  background: #34bfa3;
+}
+.panel-group .card-panel .icon-people {
+  color: #40c9c6;
+}
+.panel-group .card-panel .icon-message {
+  color: #36a3f7;
+}
+.panel-group .card-panel .icon-money {
+  color: #f4516c;
+}
+.panel-group .card-panel .icon-shopping {
+  color: #34bfa3;
+}
+.panel-group .card-panel .card-panel-icon-wrapper {
+  float: left;
+  margin: 14px 0 0 14px;
+  padding: 16px;
+  transition: all 0.38s ease-out;
+  border-radius: 6px;
+}
+.panel-group .card-panel .card-panel-icon {
+  float: left;
+  font-size: 48px;
+}
+.panel-group .card-panel .card-panel-description {
+  float: right;
+  font-weight: bold;
+  margin: 26px;
+  margin-left: 0px;
+}
+.panel-group .card-panel .card-panel-description .card-panel-text {
+  line-height: 18px;
+  color: #b9b9b9;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+.panel-group .card-panel .card-panel-description .card-panel-num {
+  margin-top: 5px;
+  display: inline-block;
+  font-size: 30px;
+  color: #ffeb3b;
 }
 
 @media (max-width: 550px) {
@@ -174,12 +159,11 @@ export default {
     width: 100%;
     height: 100%;
     margin: 0 !important;
-
-    .svg-icon {
-      display: block;
-      margin: 14px auto !important;
-      float: none !important;
-    }
+  }
+  .card-panel-icon-wrapper .svg-icon {
+    display: block;
+    margin: 14px auto !important;
+    float: none !important;
   }
 }
 </style>
