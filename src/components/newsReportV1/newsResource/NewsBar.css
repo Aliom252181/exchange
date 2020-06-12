@@ -1,0 +1,23 @@
+.new {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-bottom: #d8f7fd solid;
+  width: calc(100% - 10px*2);
+}
+.new div:nth-child(1) {
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 30px;
+}
+.new div:nth-child(2) {
+  color: #92999a;
+  font-size: 13px;
+}
+.iconImage {
+  height: 14px;
+  width: 14px;
+}
+.more {
+  color: #0000ff;
+}
