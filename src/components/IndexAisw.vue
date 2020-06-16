@@ -83,7 +83,7 @@ export default {
   },
   methods: {
     toIndex() {
-      this.$router.push("/dashboard/dashboard"); // 只能用 name
+      this.$router.push("/dashboard/dashboard");
     }
   }
 };

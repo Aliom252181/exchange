@@ -14,5 +14,6 @@ export default {
 body{
   margin: 0;
   padding: 0;
+  background:#151515;
 }
 </style>
