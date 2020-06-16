@@ -40,20 +40,20 @@
       <!--行情图表版块 --end -->
     </div>
 
-    <!-- 美元兑换人命币版块 --start-->
+    <!-- 美元兑换人民币版块 --start-->
     <div class="dataV-main-chart-container">
       <dv-border-box-11 class="dv-border-box-top" title="汇率兑换">
         <exChange class="component-container" />
       </dv-border-box-11>
     </div>
-    <!-- 美元兑换人命币版块 --end-->
+    <!-- 美元兑换人民币版块 --end-->
   </div>
 </template>
 
 <script>
 import PanelGroup from "./PannelGroup";
 import news from "./news/news"; // 新闻组件
-import exChange from "./exchange/exchange"; // 美元兑人命币汇率图表组件
+import exChange from "./exchange/exchange"; // 美元兑人民币汇率图表组件
 import globalTrends from "./globalTrends/globalTrends"; // 全球汇率图表
 import worldMap from "./worldMap/worldMap"; // 全球地图组件
 
