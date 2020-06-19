@@ -19,7 +19,7 @@ module.exports = {
         }
       },
       "/api/Weibo": {
-        target: "http://10.10.10.122:8089/getWeiboHot",
+        target: "http://43.226.149.162:8089/getWeiboHot",
         changeOrigin: true,
         pathRewrite: {
           "^/api/Weibo": ""
@@ -33,14 +33,14 @@ module.exports = {
         }
       },
       "/api/exchange": {
-        target: "http://10.10.10.122:8089/getexchangeCNY",
+        target: "http://43.226.149.162:8089/getexchangeCNY",
         changeOrigin: true,
         pathRewrite: {
           "^/api/exchange": ""
         }
       },
       "/api/findWorld": {
-        target: "http://10.10.10.122:8089/getWorld",
+        target: "http://43.226.149.162:8089/getWorld",
         changeOrigin: true,
         pathRewrite: {
           "^/api/findWorld": ""
