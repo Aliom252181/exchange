@@ -5,7 +5,7 @@
         <dv-decoration-8 style="height:40%" />
         <div class="buttonList">
           <button class="buttonList_button">
-            <span class="buttonList_button_span" @click="jumpTo('/dashboard/dashboard')">首 页</span>
+            <span class="buttonList_button_span" @click="jumpTo('/')">首 页</span>
           </button>
           <div></div>
           <div></div>

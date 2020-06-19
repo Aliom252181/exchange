@@ -38,7 +38,7 @@ export default {
   mounted() {
     this.darwEcharts();
     this.init();
-    setInterval(this.darwEcharts, 5000);
+    setInterval(this.darwEcharts, 30000);
   },
   methods: {
     init() {
